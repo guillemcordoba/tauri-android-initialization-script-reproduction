@@ -18,7 +18,7 @@ pub fn run() {
             )
             .initialization_script("console.error('hello from the webview!');")
             .build()?;
-            window.eval("console.log(window.__TAURI_IPC__)")?;
+            window.eval("console.error(window.__TAURI_IPC__)")?;
 
             Ok(())
         })
